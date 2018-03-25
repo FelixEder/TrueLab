@@ -13,7 +13,7 @@ Node.js, Express, MySQL, Sequelize
 
 The project is over but it didn't quite turn out as we wanted it to, so we will maybe continue to work on the project in the future.
 
-Possible extra features thought of but never implemented:
+#### Possible extra features thought of but never implemented:
 
   * Swipe animation
   * Admin page where teachers (or similar) can add/edit courses and other relevant information regarding them.
