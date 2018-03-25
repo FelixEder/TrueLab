@@ -1,0 +1,28 @@
+<!-- LIST OF MATCHES: Shows the list of matches a user has as well being able to open up an individual chat with one of them. -->
+
+<div ng-app"matches" class="container">
+
+    <section class="col-md-10 col-md-offset-1">
+        <div class="row" style="text-align: center;">
+            <h1>Matches:</h1>
+        </div>
+
+        <div class="row">
+            <div class="well" ng-repeat="match in matches" ng-click="redirect(room)">
+                <div class="row" style="text-align: center;">
+                    <h4>
+                        <span><a href="">{{match.name+"       "+match.email}}</a></span>
+                    </h4>
+                    <form ng-click="lodeProfile(match)">
+                        <input type="submit" id="submit" value="profile" />
+                    </form>
+                    <form ng-click="lodeChat(match)">
+                        <input type="submit" id="submit" value="message" />
+                    </form>                
+                
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>

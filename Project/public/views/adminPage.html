@@ -1,0 +1,79 @@
+<!-- ADMIN PAGE: This is just a page meant to aid in debugging so we don't have to work directly with the mysql database.
+It's used to add or remove things to the database -->
+
+
+<div class="container">
+
+    <h1>Admin page</h1>
+
+    <section>
+
+        <!--Add a user by name -->
+        <div>
+            <h1>Add new user:</h1>
+            <form ng-submit="addUser()">
+                Desired Username:
+                <input class="form-control" type="text" ng-model="username1" id="" required autofocus>
+                Desired password:
+                <input class="form-control" type="text" ng-model="password1" id="" required autofocus>
+                Desired e-mail:
+                <input class="form-control" type="text" ng-model="email1" id="" required autofocus>
+
+                <label>
+                    <input type="radio" ng-model="color.name" value="red">
+                    Red
+                </label>
+                <br/>
+                <label>
+                    <input type="radio" ng-model="color.name" ng-value="specialValue">
+                    Green
+                </label>
+
+                <br>
+                <input class="btn btn-default" type="submit" id="" value="Ok">
+            </form>
+        </div>
+
+        <!--Remove a user by name from database-->
+        <div>
+            <h1>Remove all instances of user:</h1>
+            <form ng-submit="">
+                Name of user to remove:
+                <input class="form-control" type="text" ng-model="" id="removeButton" required autofocus>
+                <br>
+                <input class="btn btn-default" type="submit" id="" value="Ok">
+            </form>
+        </div>
+
+        <br>
+
+        <!--Remove a match between two users from database-->
+        <div>
+        <h1>Add match between two users: </h1>
+            <form ng-submit="">
+                Name of user1:
+                <input class="form-control" type="text" ng-model="" id="" required autofocus>
+                Name of user2:
+                <input class="form-control" type="text" ng-model="" id="" required autofocus>
+                <br>
+                <input class="btn btn-default" type="submit" id="" value="Ok">
+        </form>
+        </div>
+
+
+        <!-- Remove an existing match between two users from database -->
+        <div>
+            <h1>Remove match between two users: </h1>
+            <form ng-submit="">
+                Name of user1:
+                <input class="form-control" type="text" ng-model="" id="" required autofocus>
+                Name of user2:
+                <input class="form-control" type="text" ng-model="" id="" required autofocus>
+                <br>
+                <input class="btn btn-default" type="submit" id="" value="Ok">
+             </form>
+        </div>
+
+    </section>
+
+</div>

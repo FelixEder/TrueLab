@@ -1,0 +1,19 @@
+<div class="container">
+
+  <section class="col-md-10 col-md-offset-1">
+    <div class="row" style="text-align: center;">
+      <h1>Queues</h1>
+    </div>
+
+    <div class="row">
+      <div class="well" ng-repeat="room in rooms" ng-click="redirect(room)">
+        <div class="row" style="text-align: center;">
+          <h4>
+            <span><a href="">{{room.name}}</a></span>
+          </h4>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</div>

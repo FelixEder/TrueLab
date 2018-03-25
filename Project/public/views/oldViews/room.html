@@ -1,0 +1,17 @@
+<div class="container">
+
+  <section class="col-md-10 col-md-offset-1">
+    <div class="row" style="text-align: center;">
+      <h1>{{room}}</h1>
+    </div>
+    <div style="border: 2px solid black">
+      <div ng-repeat="entry in entries track by $index">
+          {{entry}} <br>
+      </div>
+    </div>
+
+  	<form ng-submit="done()">
+  		<input class="form-control" type="text" ng-model="mess" id="loginInputField" required autofocus>
+  	</form>
+  </section>
+</div>

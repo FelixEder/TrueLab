@@ -1,0 +1,20 @@
+<!-- CREATE USER PAGE: -->
+<div class="" style="text-algin: center">
+  <h1>Create User:</h1>
+  <form ng-submit="done()">
+    <h3>Enter username:</h3>
+    <input class="form-control" type="text" ng-model="username" id="createUserInputField" required autofocus>
+    <h3>Enter email:</h3>
+    <input class="form-control" type="text" ng-model="email" id="createUserInputField" required autofocus>
+    <h3>Enter password:</h3>
+    <input class="form-control" type="password" ng-model="password1" id="createUserInputField" required autofocus>
+    <h3>Enter password again:</h3>
+    <input class="form-control" type="password" ng-model="password2" id="createUserInputField" required autofocus>
+    <br>
+    <input class="btn btn_default" type="submit" id="createOKBtn" value="Ok">
+  </form>
+
+  <br>
+  <button id='chatBackButton' ng-click='back()' type="button">Back</button>
+  
+</div>

@@ -1,0 +1,40 @@
+<!-- OWN USER PROFILE: shows the user's own profile page with bio, perhaps a picture, level of ambition, etc
+ as textfields and lets you edit them. -->
+
+<div ng-app="editProfile" id="container" ng-init="text='test text'">
+
+    <!-- name of user will obviously be replaced -->
+    <h1 style="text-align:center;"> {{username}}'s profile page</h1>
+
+
+    <div id="profilePicture" >
+        <h1>Picture:</h1>
+        <!-- picture here! -->
+    </div>
+
+    <div id="biography">
+        <h3> Biography: </h3>
+        <TEXTAREA ng-model="biography" Name="content" ROWS=10 COLS=100>{{biography}}</TEXTAREA>
+    </div>
+
+
+    <div id="level of ambition">
+        <h3> Level of ambition: </h3>
+        <TEXTAREA ng-model="ambition" Name="content" ROWS=1 COLS=100>{{ambition}}</TEXTAREA>
+    </div>
+
+    <div id="seeking">
+        <h3> Seeking a level of ambition: </h3>
+        <TEXTAREA ng-model="seeking" Name="content" ROWS=1 COLS=100>{{seeking}}</TEXTAREA>
+    </div>
+
+    <form ng-click="done()">
+        <input type="submit" value="Save" />
+    </form>
+
+
+</div>
+
+<br>
+<br>
+<h2 ng-show="showSaved">Profile saved!</h2>

@@ -1,0 +1,30 @@
+<!-- PRIVATE CHAT with another user: Shows all the messages between you and another user, allows you to send messages to them. -->
+
+<div ng-app"chatRoom" id="container" class="container">
+
+    <section class="">
+        <div class="row" style="text-align: center;">
+            <h1>Conversation with {{name2}}</h1>
+        </div>
+        <div style="border: 2px solid black">
+            <!-- shows the messages that have been sent between the users -->
+            <div ng-repeat="message in messages">
+                {{message.message}} <br>
+            </div>
+        </div>
+
+        <!-- allows you to submit a message-->
+        <form ng-submit="send()">
+            <h1>Send message:</h1>
+            <div id="chatHolder">
+                <input class="form-control" type="text" ng-model="mess" id="" required autofocus>
+                <input class="btn btn-default" type="submit" id="messSend" value="Send">
+            </div>
+        </form>
+    </section>
+
+<br>
+<br>
+    <button id='chatBackButton' ng-click='back()' type="button">Back</button>
+
+</div>

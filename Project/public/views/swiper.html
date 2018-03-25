@@ -1,0 +1,52 @@
+<!-- The swiping page, where you can swipe through different profiles and choose whether you like them or not. -->
+
+<div id="SwiperContainer" ng-show="showSwiper">
+
+    <div id="swipeProfile">
+        <div>
+            <h5>Picture:</h5>
+        </div>
+
+
+       <div>
+           <h5>Name:</h5>
+           <TEXTAREA id="swipeArea" ROWS=1 COLS=35 readonly>{{currentProfile.name}}</TEXTAREA>
+       </div>
+
+        <div>
+        <h5>Email:</h5>
+        <TEXTAREA id="swipeArea" ROWS=1 COLS=35 readonly>{{currentProfile.email}}</TEXTAREA>
+        </div>
+
+        <div>
+        <h5>Ambition:</h5>
+        <TEXTAREA id="swipeArea" ROWS=1 COLS=35 readonly>{{currentProfile.ambition}}</TEXTAREA>
+        </div>
+
+        <div>
+        <h5>Seeking:</h5>
+        <TEXTAREA id="swipeArea" ROWS=1 COLS=35 readonly>{{currentProfile.ambition}}</TEXTAREA>
+        </div>
+
+        <div>
+        <h5>Biography:</h5>
+        <TEXTAREA id="swipeArea2" ROWS=10 COLS=35 readonly>{{currentProfile.biography}}</TEXTAREA>
+        </div>
+
+
+    </div>
+
+    <div id="swipeButtons">
+        <button id='swipeNo' ng-click='no()' type="button">No</button>
+        <button id='swipeYes' ng-click='yes()' type="button">Yes</button>
+    </div>
+
+    <h3 ng-show="showMatched" style="color:red;">{{matchedMessage}}</h3>
+
+</div>
+
+
+<div id=getMoreProfiles class="ng-cloak" ng-show="showSwiper==false">
+    <h2>You've run out of people to swipe through! Click here to try and fetch more potential matches! </h2>
+    <button id='fetchProfileButton' ng-click='moreProfiles()' type="button">Fetch more profiles!</button>
+</div>

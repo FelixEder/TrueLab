@@ -1,0 +1,147 @@
+@blue: #387EFF;
+@blue-hover: #1C65EB;
+
+.html, body
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+span.text-blue
+{
+  color: @blue;
+}
+
+.sr-only {
+  background-color: blue;
+  background-color: blue;
+}
+
+button:focus
+{
+  outline: 0;
+}
+.navbar .container
+{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
+}
+.navbar > .container .navbar-brand-centered,
+.navbar > .container-fluid .navbar-brand-centered
+{
+  margin-left: -80px;
+}
+.navbar
+{
+  border-bottom: 0;
+}
+.navbar-default .navbar-nav > li:not(.active) > a:not(.unresponsive):hover
+{
+  background-color: #0E0E0E;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus
+{
+  background-color: #3873FF;
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a:hover
+{
+  background-color: #1C65EB;
+}
+.nav.navbar-nav.navbar-right > li > .unresponsive:hover
+{
+  color: #777777;
+  cursor: default;
+}
+
+div.light-blue-background
+{
+  background-color: #C5E7FF;
+}
+
+.row
+{
+  height: 60px;
+  width: 800px;
+}
+
+#submit
+{
+
+  height: 40px;
+  width: 80px;
+  position: relative;
+  left: 350px;
+  bottom: 50px;
+}
+
+@swipeHeight: 550px;
+@swipeWidth: 300px;
+
+#swipeProfile {
+
+  left: 450px;
+  position:relative;
+  text-align:center;
+  height:@swipeHeight;
+  width:@swipeWidth ;
+  background:#0E0E0E;
+
+}
+
+#swipeButton{
+  left: 450px;
+  backgoround-color: black;
+}
+
+#swipeYes {
+  left: 450px;
+  position:relative;
+  background: #16e238;
+  height:50px;
+  width:@swipeWidth/2-1.5px;
+}
+
+#swipeNo {
+  left: 450px;
+  position:relative;
+  background: #ff1622;
+  height:50px;
+  width:@swipeWidth/2-1.5px;
+}
+
+#fetchProfileButton{
+  text-align:center;
+}
+
+#swipeArea {
+  resize:none;
+}
+
+#swipeArea2 {
+  resize:none;
+  overflow-y: scroll;
+}
+
+#swipeProfile > div > h5 {
+  color: grey;
+}
+
+//fixes issue where the "Do you want to fetch more profiles prompt div flashes before page loads
+#getMoreProfiles {
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
